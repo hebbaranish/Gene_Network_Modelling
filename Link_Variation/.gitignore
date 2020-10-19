@@ -1,0 +1,15 @@
+input/
+output/
+initialise/__pycache__/
+modules/__pycache__/
+info.txt
+modules/plotter_old.py
+RACIPE/
+classify.txt
+racipe_prob.txt
+tempdata.txt
+racipeVbool.png
+percentvact.txt
+activation.txt
+modules/async_perturbation.py
+modules/threshold.py

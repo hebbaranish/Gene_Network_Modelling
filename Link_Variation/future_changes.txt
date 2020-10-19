@@ -1,0 +1,9 @@
+Future Issues/Bugs:
+
+1)Integrate NetworkX into code to keep track of not just fixed points, but complex attractors as well. Also need to count number of positive feedback loops/other graph theoretical measures of interest as needed.
+2)For large networks, storing data is not an option as it gets prohibitively large. Either delete files after being done with them or store different stable states and the number encountered dynamically during the process. However, this loses the information of which initialization states go where. The most general solution is to implement a transition probability matrix. This also lets us do more numerical analysis of the network and its properties( Theoretical analysis), if needed.
+3)Currently placeholder files are created and deleted during the code. Possibly rewrite the structure of the code to take care of this.
+4)Add extra inputs for genes that always have a fixed state (Over/underexpression). Possibly add an option to switch on/off a gene after some time to observe network dynamics when knocking down a gene, etc.
+5)Make plotting module more robust. Add an option to view to expression of a gene over time. (Perhaps the average value of the gene over time?)
+6)Add things like what link was randomised,High/low input genes, other relevant input parameters to final plot
+7)Integrate number of threads for each simulation into the init file.

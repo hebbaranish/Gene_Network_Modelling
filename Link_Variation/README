@@ -1,0 +1,5 @@
+Boolean modelling tool, using ising strategy.
+initialise using init.txt
+Input is a topo file
+
+selective_node_weights is usable only when unweighted_run is set to 1 and weighted_run is set to 0
