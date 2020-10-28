@@ -1,5 +1,5 @@
 CC 		= gcc
-CFLAGS  = -g -pg -Wall -fopenmp
+CFLAGS  = -Wall -fopenmp -O3
 LIBS    = -lm
 
 SRCS = RACIPE.c pcg_basic.c RACIPELIB.c rkf45.c

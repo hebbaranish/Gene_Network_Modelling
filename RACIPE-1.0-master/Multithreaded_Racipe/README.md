@@ -48,6 +48,7 @@ Use "`./RACIPE -h`" to find all available options.<br />
 **-SF**            : Scale the distribution ranges of parameters except hill coefficients, should be smaller than 1 (Default 1).<br />
 **-num_findT**     : Number of simulations used to estimate threshold (Default 10000).<br />
 **-num_paras**     : Number of RACIPE models to generate (Default 100).<br />
+**-threads**       : Number of threads used  (Default 3).<br />
 **-num_ode**       : Number of Random initial values to solve ODEs (Default 100).<br />
 **-num_stability** : Maximum number of stable states to save for one RACIPE model (Default 10).<br />
 **-thrd**          : Cutoff for convergence of steady states for numerically solving ODEs (Default 1.0).<br />
@@ -117,8 +118,10 @@ Use "`./RACIPE -h`" to find all available options.<br />
      Over_threshold_A  : Number of stable states for current RACIPE model whose expression of gene A is larger than its threshold parameter of A.
      Below_threshold_A : Number of stable states for current RACIPE model whose expression of gene A is smaller than its threshold parameter of A.
 
-     For any model, the probability for gene A's expression to be larger than its threshold equals to the sum of Over_threshold_A across all the models devided by the sum of both Over_threshold_A and Below_threshold_A across all the models.
-
+     For any model, the probability for gene A's expression to be larger than its threshold equals to the sum of Over_threshold_A across all the models divided by the sum of both Over_threshold_A and Below_threshold_A across all the models.
+  8. _solution.dat storing the gene expression for each stable steady state in log2 scale.
+     All the solution files with different number of stable states are combined into a single file for easier data processing.
+	 
 # License
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

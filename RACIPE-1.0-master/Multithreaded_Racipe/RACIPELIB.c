@@ -1725,7 +1725,7 @@ void save_model_solns(struct opts *simu_opts, struct topo *topoinfo, struct rlt 
     f_s = (FILE **) calloc (simu_opts->num_stability +1, sizeof(FILE *));
   }
 
-  char fsname[simu_opts->num_stability][100];
+  char fsname[simu_opts->num_stability +1 ][100];
   char tmpparasname[100] = "";
 
   int i = 0;
