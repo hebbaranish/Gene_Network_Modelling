@@ -1464,9 +1464,9 @@ void generate_random_range(FILE *f_paras, struct topo *topoinfo, struct opts *si
         // estimate threshold and printout
         estimate_threshold(num, i, meanP, stdP, meanK, stdK, minN_d, maxN_d, meanF, stdF, meanT, stdT, topoinfo, dist, SF);
         // printf("%s = %f\n", topoinfo->Gname[i], (minT+maxT)/2.0);
-        if (minT[i] < 0.01){
+        if (meanT[i] < 0.01){
           tmpfold = 10.0;
-          while ((minT[i]*tmpfold) < 0.01){
+          while ((meanT[i]*tmpfold) < 0.01){
             tmpfold = tmpfold*10.0;
           }
           amplifyfold[i] = tmpfold;
@@ -1523,9 +1523,9 @@ void generate_random_range(FILE *f_paras, struct topo *topoinfo, struct opts *si
         // estimate threshold and printout
         estimate_threshold(num, i, meanP, stdP, meanK, stdK, minN_d, maxN_d, meanF, stdF, meanT, stdT, topoinfo, dist, SF);
         // printf("%s = %f\n", topoinfo->Gname[i], (minT+maxT)/2.0);
-        if (minT[i] < 0.01){
+        if (meanT[i] < 0.01){
           tmpfold = 10.0;
-          while ((minT[i]*tmpfold) < 0.01){
+          while ((meanT[i]*tmpfold) < 0.01){
             tmpfold = tmpfold*10.0;
           }
           amplifyfold[i] = tmpfold;
